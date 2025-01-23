@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backround"
+    android:padding="16dp">
+
+
+    <!-- Back Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT PROFILE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!-- Profile Picture -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="Profile Picture"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profil"
+            android:textSize="14sp"
+            android:textColor="#009688"
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:text="Gede Ananda"
+        android:inputType="textPersonName"
+        android:background="@color/backround2"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Address Field -->
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:text="8, Jl. Patra Tomang I No.14, RT.8/RW.2, Duri Kepa, ..."
+        android:inputType="textPostalAddress"
+        android:background="@color/backround2"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subdistrict Field -->
+    <EditText
+        android:id="@+id/subdistrictEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kelurahan"
+        android:text="Duri Kepa"
+        android:inputType="text"
+        android:background="@color/backround2"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- District Field -->
+    <EditText
+        android:id="@+id/districtEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kecamatan"
+        android:text="Kebon Jeruk"
+        android:inputType="text"
+        android:background="@color/backround2"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Province/City Field -->
+    <EditText
+        android:id="@+id/provinceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Provinsi/Kota"
+        android:text="DKI Jakarta"
+        android:inputType="text"
+        android:background="@color/backround2"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:backgroundTint="@color/orange2"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="13dp" />
+
+</LinearLayout>

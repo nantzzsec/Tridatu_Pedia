@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/HomeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/ChatFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/FavoriteFragment"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite" />
+
+    <item
+        android:id="@+id/ProfileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+</menu>

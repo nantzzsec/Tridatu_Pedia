@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@color/backround">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in Account"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Input Fields -->
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_text"
+            android:hint="Fullname"
+            android:padding="12dp"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/backround2"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:background="@drawable/input_text"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/backround2"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/input_text"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/backround2"/>
+
+        <!-- Buttons -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="13dp"
+            android:backgroundTint="@color/orange2"
+            android:text="Create Account"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:padding="13dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/orange2"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
